@@ -5,9 +5,7 @@ iptables --policy INPUT ACCEPT
 iptables --policy OUTPUT ACCEPT
 
 #Deletes all current rules
-iptables -F INPUT
-iptables -F FORWARD
-iptables -F OUTPUT
+iptables -F
 
 #Accepts tcp on the following ports
 for port in 53; do
