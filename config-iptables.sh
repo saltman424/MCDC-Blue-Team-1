@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Temporary sets ACCEPT as the default policy for INPUT and OUTPUT
+#Temporarily sets ACCEPT as the default policy for INPUT and OUTPUT
 iptables --policy INPUT ACCEPT
 iptables --policy OUTPUT ACCEPT
 
@@ -26,5 +26,5 @@ iptables --policy INPUT DROP
 iptables --policy FORWARD DROP
 iptables --policy OUTPUT DROP
 
-#Show results
+#Shows results
 iptables -L -v
